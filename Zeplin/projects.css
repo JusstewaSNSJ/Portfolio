@@ -1,0 +1,401 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+  margin: 0;
+  background-color: var(--white-primary);
+}
+
+.Projects-Page {
+  width: 100vw;
+  height: auto;
+  flex-grow: 0;
+  background-color: var(--white-primary);
+}
+
+.hero-section2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 30px auto 30px ;
+    width: 85vw; /* Ensure the hero-section takes up the full width */
+    height: auto;
+}
+
+.hero-header { /*TODO: Align to the left side so "o" is centered on the projects edge*/
+  text-align: left;
+  font-family: "Roboto-SemiBold", sans-serif;
+  font-size: 72px;
+  line-height: 100px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-line1 {
+  color: var(--black-primary);
+  font-family: "Roboto", sans-serif;
+  font-size: 72px;
+  line-height: 100px;
+  font-weight: 600;
+}
+.header-line2 {
+  background-image: linear-gradient(to right, #5566DE, #A38AD0, #F9BA00, #F1B006);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  line-height: var(--title-height);
+  font-weight: var(--title-weight);
+}
+.headshot2 { /*TODO: Align to the right side of the projects edge*/
+  width: 200px;
+  height: 205px;
+  background-image: url('headshot.svg');
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: 100%; /* Makes the image 100% the entire element */
+}
+
+.stats,
+.stats * {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project-stats,
+.project-stats * {
+  box-sizing: border-box;
+  gap: 100px;
+}
+.project-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.line-3 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 100px;
+  height: 110px;
+  position: relative;
+  transform-origin: 50% 0;
+  margin: 10px 0;
+  transform: rotate(90deg) scale(1, 1) translateX(50%);
+}
+.completed,
+.impacted {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.line1 {
+  background-image: linear-gradient(to left, #5566DE, #A38AD0, #F9BA00, #F1B006);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: var(--heading-3-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--h2-size);
+  line-height: var(--h2-height);
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line2 {
+  color: #000000;
+  text-align: center;
+  font-family: var(--body-4-font-family, "RobotoFlex-Regular", sans-serif);
+  font-size: var(--body-4-font-size, 20px);
+  line-height: var(--body-4-line-height, 30px);
+  font-weight: var(--body-4-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.projects-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 800px;
+  margin: auto;
+  width: 90vw;
+}
+.project-container1 {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin: auto;
+  align-items: flex-start;
+}
+.project-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.tabfloater-project,
+.sdlc-project,
+.customer-service-project,
+.what-is-software-development-project {
+  width: fit-content;
+  padding: 23px;
+  background: var(--white-secondary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 15px;
+  border-radius: 20px;
+  border: 1px var(--black-primary) solid;
+}
+.project-info {
+  align-items: flex-start;
+  height: 250px;
+}
+.project-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.dates {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.project-name {
+  color: #000000;
+  text-align: left;
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+}
+
+.project-body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+    height: 132px;
+}
+.description {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  width: 380px;
+  height: 100px;
+}
+.link {
+  color: #000000;
+  text-align: left;
+  font-family: "RobotoFlex-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+.pics {
+    position: relative;
+    background: var(--background-2, #8cc2f8);
+    border-radius: 20px;
+    flex-shrink: 0;
+    width: 410px;
+    height: 293px;
+    overflow: hidden;
+}
+
+/*tabfloater*/
+.front { /*front*/
+    width: 120%;
+    height: 120%;
+    object-fit: fill;
+}
+.img-container-front { /*TODO: TabFloater Fix sizing of the front image*/
+    width: 314px;
+    height: 210px;
+    position: absolute; /* Changed from relative to absolute */
+    left: 79px;
+    bottom: 14px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.img-container-back {
+    /* width: 313.88px;
+    height: 221.66px;*/
+    width: 313px;
+    height: 221px;
+    left: 18px;
+    top: 17px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.back { /*back*/
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+/*tabfloater end*/
+
+/*SDLC*/
+.img-container-front2 {
+    width: 314px;
+    height: 210px;
+    position: absolute; /* Changed from relative to absolute */
+    left: 79px;
+    bottom: 14px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.sdlc-front { /*TODO: Need to recreate part of the SDLC graphic to complete the background*/
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+.img-container-back2 {
+/* width: 313.88px;
+    height: 221.66px;*/
+    width: 313px;
+    height: 221px;
+    left: 18px;
+    top: 17px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.sdlc-back {
+    width: 100%;
+    height: 120%;
+    object-fit: fill;
+}
+/*SDLC end*/
+
+/*what is software development*/
+.software-development-front {
+    width: 312px;
+    height: 190px;
+    position: absolute; /* Changed from relative to absolute */
+    left: 79px;
+    bottom: 14px;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.img-container-back3 {
+/* width: 313.88px;
+    height: 221.66px;*/
+    width: 313px;
+    height: auto;
+    left: 18px;
+    top: 17px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.software-development-back {
+    width: 100%;
+    height: 80%;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+    object-fit: contain;
+}
+/*software development end*/
+
+/*Customer Service*/
+.img-container-front4 {
+    width: 314px;
+    height: 210px;
+    position: absolute; /* Changed from relative to absolute */
+    left: 79px;
+    bottom: 14px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.customer-service-front { /*TODO: customer-service Fix sizing of the front image*/
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+.img-container-back4 {
+/* width: 313.88px;
+    height: 221.66px;*/
+    width: 313px;
+    height: 221px;
+    left: 18px;
+    top: 17px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.customer-service-back { /*TODO: customer-service Fix sizing of the back image*/
+    width: 100%;
+    height: 120%;
+    object-fit: fill;
+}
+/*Customer Service end*/

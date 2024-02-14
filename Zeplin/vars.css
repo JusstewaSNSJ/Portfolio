@@ -1,0 +1,70 @@
+:root {
+  --background-color: #DFE1E2;
+  --white-primary: #f0f2f5;
+  --white-secondary: #FFFFFF;
+  --black-primary: #161513;
+  --black-secondary: #1C1C22;
+  --stop-1: #5566DE;
+  --stop-2: #A38AD0;
+  --stop-3: #F9BA00;
+  --stop-4: #F1B006;
+  --nav-hover: #7b838a;
+  --nav-active: #8f91e4;
+  --button-color: #8F91E4;
+  --button-hover: #E4A601; /*large button*/
+  --button-active: #565C61; /*large button*/
+
+  --title-font: 'Roboto', sans-serif;
+  --title-weight: 600; /*SemiBold*/
+  --title-size: 72px;
+  --title-height: 1;
+
+  --h2-font: 'Roboto', sans-serif;
+  --h2-weight: 600; /*SemiBold*/
+  --h2-size: 60px;
+  --h2-height: 1.15;
+
+  --h3-font: 'Roboto', sans-serif;
+  --h3-weight: 500;
+  --h3-size: 44px;
+  --h3-height: 1.15;
+
+  --h3a-font: 'Roboto Flex', sans-serif;
+  --h3a-weight: 600;
+  --h3a-size: 30px;
+  --h3a-height: 1.15;
+
+  --h4-font: 'Roboto', sans-serif;
+  --h4-weight: 600;
+  --h4-size: 23px;
+  --h4-height: 1;
+
+  --body-font: 'Roboto Flex', sans-serif;
+  --body-weight: 400;
+  --body-size: 20px;
+  --body-height: 1.5;
+
+  --ul-font: 'Roboto Flex', sans-serif;
+  --ul-weight: 400;
+  --ul-size: 20px;
+  --ul-height: 1.5;
+
+  --button-font: 'Roboto', sans-serif;
+  --button-weight: 400;
+  --button-size: 24px;
+  --button-height: 1;
+
+  --button2-font: 'Roboto', sans-serif;
+  --button2-weight: 400;
+  --button2-size: 20px;
+  --button2-height: 1;
+
+  --form-font: 'Roboto', sans-serif;
+  --form-weight: 400;
+  --form-size: 16px;
+  --form-height: 1;
+
+  --misc: #DFE1E2;
+}
+
+/* Add more variables as needed */
