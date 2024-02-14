@@ -383,7 +383,7 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('design-banner-container.svg');
+  background-image: url('../images/design-banner-container.svg');
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 2; /* Higher z-index */

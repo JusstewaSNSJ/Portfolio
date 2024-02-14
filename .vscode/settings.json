@@ -1,4 +1,5 @@
 {
     "html.format.wrapLineLength": 0,
     "editor.maxTokenizationLineLength": 20000
+    "search.useIgnoreFiles": false
 }

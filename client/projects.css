@@ -92,7 +92,7 @@ html, body {
 .headshot2 { /*TODO: Align to the right side of the projects edge*/
   width: 200px;
   height: 205px;
-  background-image: url('headshot.svg');
+  background-image: url('../images/headshot.svg');
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: 100%; /* Makes the image 100% the entire element */
 }
