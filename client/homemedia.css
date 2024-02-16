@@ -267,20 +267,19 @@
     .hero-section {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        gap: 50px;
-        margin: 25px auto;
-        width: 90vw; /* Ensure the hero-section takes up the full width */
-        height: fit-content;
-    }
+        width: fit-content;
+        padding: 5px;
+      }
 
     .headshot {
-        width: 170px;
-        height: 175px;
+        width: 110px;
+        height: 115px;
         background-image: url('../images/headshot.svg');
         background-repeat: no-repeat; /* Prevents the image from repeating */
         background-size: 100%; /* Makes the image 90% the entire element */      
+        position: relative;
     }
 
     .hero-text {
@@ -288,7 +287,6 @@
         grid-auto-flow: row;
         height: fit-content;
         gap: 10px;
-        margin: auto;
         padding: 0;
         align-items: start;
         margin-right: 100px;
@@ -298,7 +296,6 @@
         flex-direction: column;
         gap: 0px;
         align-items: flex-start;
-        justify-content: center;
         flex-shrink: 0;
         position: relative;
       }
@@ -325,6 +322,19 @@
       
       .hero-title-line-2 {
           color: var(--black-primary);
+      }
+
+      .hero-body-text {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        margin: auto;
+        font-family: var(--body-font);
+        font-size: var(--body-size);
+        font-weight: var(--body-weight);
+        line-height: var(--body-height);
+        text-align: left;
+        color: var(--black-secondary);
       }
 }
 /* break: animations */

@@ -77,12 +77,12 @@
 
   /*Smaller screens*/
   --mobilename-font: 'Roboto', sans-serif;
-  --mobilename-size: 31px;
+  --mobilename-size: 27px;
   --mobilename-weight: 300;
 
   --mobiletitle-font: 'Roboto', sans-serif;
   --mobiletitle-weight: 600; /*SemiBold*/
-  --mobiletitle-size: 44px;
+  --mobiletitle-size: 35px;
   --mobiletitle-height: 1;
 
   --nav-font: 'Roboto', sans-serif;
