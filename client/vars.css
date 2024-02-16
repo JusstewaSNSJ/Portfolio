@@ -39,16 +39,16 @@
   --h4-size: 23px;
   --h4-height: 1;
 
-  --body-font: 'Roboto Flex', sans-serif;
-  --body-weight: 400;
-  --body-size: 20px;
-  --body-height: 1.5;
-
   --nav-font: 'Roboto', sans-serif;
   --nav-size: 20px;
   --nav-weight: 500;
   --nav-height: normal;
   --nav-case: uppercase;
+
+  --body-font: 'Roboto Flex', sans-serif;
+  --body-weight: 400;
+  --body-size: 20px;
+  --body-height: 1.5;
 
   --approach-font: 'Roboto Flex', sans-serif;
   --approach-weight: 600;
@@ -74,6 +74,22 @@
   --form-weight: 400;
   --form-size: 16px;
   --form-height: 1;
+
+  /*Smaller screens*/
+  --mobilename-font: 'Roboto', sans-serif;
+  --mobilename-size: 31px;
+  --mobilename-weight: 300;
+
+  --mobiletitle-font: 'Roboto', sans-serif;
+  --mobiletitle-weight: 600; /*SemiBold*/
+  --mobiletitle-size: 44px;
+  --mobiletitle-height: 1;
+
+  --nav-font: 'Roboto', sans-serif;
+  --nav-size: 20px;
+  --nav-weight: 500;
+  --nav-height: normal;
+  --nav-case: uppercase;
 
   --misc: #DFE1E2;
 }
