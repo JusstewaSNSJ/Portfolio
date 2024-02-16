@@ -77,19 +77,39 @@
 
   /*Smaller screens*/
   --mobilename-font: 'Roboto', sans-serif;
-  --mobilename-size: 27px;
+  --mobilename-size: 23px;
   --mobilename-weight: 300;
 
   --mobiletitle-font: 'Roboto', sans-serif;
   --mobiletitle-weight: 600; /*SemiBold*/
-  --mobiletitle-size: 35px;
+  --mobiletitle-size: 31px;
   --mobiletitle-height: 1;
+
+  --mobileh2-font: 'Roboto', sans-serif;
+  --mobileh2-weight: 600; /*SemiBold*/
+  --mobileh2-size: 25px;
+  --mobileh2-height: 1;
+
+  --mobileh3-font: 'Roboto', sans-serif;
+  --mobileh3-weight: 600; /*SemiBold*/
+  --mobileh3-size: 18px;
+  --mobileh3-height: 1;
+
+  --mobilebody-font: 'Roboto Flex', sans-serif;
+  --mobilebody-weight: 400;
+  --mobilebody-size: 14px;
+  --mobilebody-height: 1.5;
 
   --nav-font: 'Roboto', sans-serif;
   --nav-size: 20px;
   --nav-weight: 500;
   --nav-height: normal;
   --nav-case: uppercase;
+
+  --mobileul-font: 'Roboto Flex', sans-serif;
+  --mobileul-weight: 400;
+  --mobileul-size: 12px;
+  --mobileul-height: 1.5;
 
   --misc: #DFE1E2;
 }
