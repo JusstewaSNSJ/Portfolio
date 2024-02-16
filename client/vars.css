@@ -44,6 +44,17 @@
   --body-size: 20px;
   --body-height: 1.5;
 
+  --nav-font: 'Roboto', sans-serif;
+  --nav-size: 20px;
+  --nav-weight: 500;
+  --nav-height: normal;
+  --nav-case: uppercase;
+
+  --approach-font: 'Roboto Flex', sans-serif;
+  --approach-weight: 600;
+  --approach-size: 20px;
+  --approach-height: 1.5;
+
   --ul-font: 'Roboto Flex', sans-serif;
   --ul-weight: 400;
   --ul-size: 20px;
@@ -51,7 +62,7 @@
 
   --button-font: 'Roboto', sans-serif;
   --button-weight: 400;
-  --button-size: 24px;
+  --button-size: 20px;
   --button-height: 1;
 
   --button2-font: 'Roboto', sans-serif;

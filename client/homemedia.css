@@ -1,0 +1,217 @@
+/* CSS for medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Home-Page {
+        width: 100vw;
+        height: 100vh;
+        flex-grow: 0;
+        background-color: var(--white-primary);
+      }
+    
+    .header {
+        width: 100vw;
+        height: 100px;
+        display: flex; /* Use grid instead of flex */
+        flex-direction: row;
+        background-color: var(--white-primary);
+        padding: 0;
+    }
+
+    .Name {
+        max-width: max-content;
+        flex-grow: .70;
+        font-family: var(--nav-font);
+        font-size: 41px;
+        font-weight: 300;
+        line-height: var(--nav-height);
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--black-primary);
+        right: auto;
+        margin: auto;
+    }
+
+    .mobile-container {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        width: fit-content;
+        margin-right: auto;
+        background-color: var(--button-color);
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar-links {
+        flex-direction: column; /* Change to column */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white-primary);
+        box-sizing: border-box;
+        visibility: hidden;
+        opacity: 0; /* Start invisible */
+        animation: fadeOut 0.5s ease-in-out forwards; /* Apply fadeOut animation */
+    }
+    
+    .nav-bar-links.show {
+        visibility: visible;
+        opacity: 1; /* Show when visible*/
+        animation: fadeIn 0.5s ease-in-out forwards; /* Apply fadeIn animation */
+    }
+    .Home,
+    .About,
+    .Projects,
+    .Contact {
+        width: auto;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 2.5px;
+    }
+
+    .hero-section {
+        gap: 125px;
+    }
+
+    .headshot {
+        width: 210px;
+        height: 215px;
+    }
+
+    .hero-text {
+        gap: 20px;
+    }
+
+    .hero-body-text {
+        width: 580px;
+    }
+
+    .Button-4 {
+        padding: 10px 20px;
+    }
+}
+
+/* CSS for small screens (mobile) */
+@media (max-width: 767px) {    
+    .Home-Page {
+        width: 100vw;
+        height: 100vh;
+        flex-grow: 0;
+        background-color: var(--white-primary);
+      }
+    
+    .header {
+        width: 100vw;
+        height: 100px;
+        display: flex; /* Use grid instead of flex */
+        flex-direction: row;
+        background-color: var(--white-primary);
+        padding: 0;
+    }
+
+    .Name {
+        max-width: max-content;
+        flex-grow: .70;
+        font-family: var(--nav-font);
+        font-size: 41px;
+        font-weight: 300;
+        line-height: var(--nav-height);
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--black-primary);
+        right: auto;
+        margin: auto;
+    }
+
+    .mobile-container {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        width: fit-content;
+        margin-right: auto;
+        position: relative;
+        background-color: var(--button-color);
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar-links {
+        flex-direction: column; /* Change to column */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white-primary);
+        box-sizing: border-box;
+        visibility: hidden;
+        opacity: 0; /* Start invisible */
+        animation: fadeOut 0.5s ease-in-out forwards; /* Apply fadeOut animation */
+    }
+    
+    .nav-bar-links.show {
+        visibility: visible;
+        opacity: 1; /* Show when visible*/
+        animation: fadeIn 0.5s ease-in-out forwards; /* Apply fadeIn animation */
+    }
+    .Home,
+    .About,
+    .Projects,
+    .Contact {
+        width: auto;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 2.5px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    .headshot {
+        width: 150px;
+        height: 155px;
+    }
+
+    .hero-text {
+        gap: 10px;
+    }
+
+    .hero-body-text {
+        width: 280px;
+    }
+
+    .Button-4 {
+        padding: 5px 10px;
+    }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; visibility: hidden;}
+  100% {opacity: 1; visibility: visible;}
+}
+  
+@keyframes fadeOut {
+  0% {opacity: 1; visibility: visible;}
+  100% {opacity: 0; visibility: hidden;}
+}

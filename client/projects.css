@@ -146,7 +146,7 @@ html, body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: var(--heading-3-font-family, "Roboto-Medium", sans-serif);
+  font-family: var(--h2-font);
   font-size: var(--h2-size);
   line-height: var(--h2-height);
   font-weight: 500;
