@@ -588,6 +588,7 @@
     .row-1-container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 5px;
         align-items: center;
         justify-content: center;
@@ -615,9 +616,9 @@
         background: var(--white-secondary, #ffffff);
         padding: 10px;
         width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
@@ -641,14 +642,13 @@
     }
 
     .articulate-container {
-        padding: 30px 0px 30px 0px;
-        width: 227.6px;
-        flex-grow: 0;
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 57px;
         background-color: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -677,10 +677,11 @@
     }
     .creative-cloud-container {
         background: var(--white-secondary, #ffffff);
-        padding: 30px 15px 30px 15px;
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
         display: flex;
         flex-direction: column;
-        gap: 57px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
@@ -695,11 +696,11 @@
     }
     .office-container {
         background: var(--white-secondary, #ffffff);
-        padding: 30px 0px 30px 0px;
-        width: 227.6px;
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
         display: flex;
         flex-direction: column;
-        gap: 57px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
@@ -707,13 +708,13 @@
         overflow: hidden;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .icon {
+    .icon { /*office logo*/
         flex-shrink: 0;
         width: 100px;
         height: 100px;
         position: relative;
     }
-    .vector {
+    .vector { /*office logo*/
         height: auto;
         position: absolute;
         right: 0%;
@@ -734,15 +735,180 @@
     .body {
         color: #000000;
         text-align: center;
-        font-family: var(--mobileh3-font);
-        font-size: var(--mobileh3-size);
-        line-height: var(--mobileh3-height);
-        font-weight: var(--mobileh3-weight);
+        font-family: var(--mobileh4-font);
+        font-size: var(--mobileh4-size);
+        line-height: var(--mobileh4-height);
+        font-weight: var(--mobileh4-weight);
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .row-2-container,
+    .row-2-container * {
+        box-sizing: border-box;
+    }
+    .row-2-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+    }
+    .html-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .html-logo {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+      }
+      .html-background {
+        height: auto;
+        position: absolute;
+        right: 0%;
+        left: 0%;
+        width: auto;
+        bottom: 0%;
+        top: 0%;
+        height: 100%;
+        overflow: visible;
+      }
+      .html-logo2 {
+        height: auto;
+        position: absolute;
+        right: 22.46%;
+        left: 22.46%;
+        width: 55.08%;
+        bottom: 11.25%;
+        top: 11%;
+        height: 77.75%;
+        overflow: visible;
+      }
+      .css-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .css-logo {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+      }
+      .css-background {
+        height: auto;
+        position: absolute;
+        right: 0%;
+        left: 0%;
+        width: 100%;
+        bottom: 0%;
+        top: 0%;
+        height: 100%;
+        overflow: visible;
+      }
+      .css-logo2 {
+        height: auto;
+        position: absolute;
+        right: 22.42%;
+        left: 22.5%;
+        width: 55.08%;
+        bottom: 11.25%;
+        top: 11%;
+        height: 77.75%;
+        overflow: visible;
+      }
+      .body2 {
+        color: #000000;
+        text-align: center;
+        font-family: var(--mobileh3-font);
+        font-size: var(--mobileh3-size);
+        line-height: var(--mobileh3-height);
+        font-weight: var(--mobileh3-weight);
+        position: relative;
+        width: 74.18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .java-script-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .java-script-logo {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: visible;
+      }
+      .body3 {
+        color: #000000;
+        text-align: center;
+        font-family: var(--mobileh3-font);
+        font-size: var(--mobileh3-size);
+        line-height: var(--mobileh3-height);
+        font-weight: var(--mobileh3-weight);
+        position: relative;
+        width: 144.05px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .github-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .github-logo {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: visible;
+      }
+      
 }
 /* break: animations */
 @keyframes fadeIn {

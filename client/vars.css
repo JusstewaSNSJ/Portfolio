@@ -95,6 +95,11 @@
   --mobileh3-size: 18px;
   --mobileh3-height: 1;
 
+  --mobileh4-font: 'Roboto', sans-serif;
+  --mobileh4-weight: 600; /*SemiBold*/
+  --mobileh4-size: 16px;
+  --mobileh4-height: 1;
+
   --mobilebody-font: 'Roboto Flex', sans-serif;
   --mobilebody-weight: 400;
   --mobilebody-size: 12px;
