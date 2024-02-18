@@ -903,14 +903,6 @@ html, body {
   flex-direction: row;
   align-items: center;
   gap: 20px;
-
-  /*  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: var(--white-primary);
-  */
 }
 .footer-line {
   border-style: solid;
@@ -934,18 +926,6 @@ html, body {
   line-height: var(--nav-height);
   align-self: flex-start; /* changed this line */
   margin-left: auto;
-
-  /*  width: fit-content;
-  flex-grow: .70;
-  font-family: var(--nav-font);
-  font-size: 41px;
-  font-weight: 300;
-  line-height: var(--nav-height);
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--black-primary);
-  */
 }
 .footer-button-container {
   display: flex;

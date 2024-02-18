@@ -1,0 +1,102 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+  margin: 0;
+  background-color: var(--white-primary);
+  height: 100%;
+  overflow: auto;
+}
+
+.Confirmation-Page {
+  max-width: 100vw;
+  min-height: fit-content;
+  flex-grow: 0;
+  border-radius: 2px;
+  background-color: var(--white-primary);
+}
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 150px auto 150px ;
+    max-width: 85vw; 
+    min-height: fit-content;
+}
+
+.title,
+.title * {
+  box-sizing: border-box;
+}
+.title {
+  background-image: linear-gradient(to right, #5566DE, #A38AD0, #F9BA00, #F1B006);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  line-height: var(--title-height);
+  font-weight: var(--title-weight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.body,
+.body * {
+  box-sizing: border-box;
+}
+.body {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  line-height: var(--body-height);
+  font-weight: var(--body-weight);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
