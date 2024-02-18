@@ -247,6 +247,7 @@ html, body {
   background-color: #8f91e4;
   font-family: var(--button2-font);
   font-size: var(--button2-size);
+  text-transform: uppercase;
   color: #000;
   text-align: center;
   border-radius: 100px;

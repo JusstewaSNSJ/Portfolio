@@ -55,7 +55,9 @@
             <li>Networking</li>
           </div>          
         </div>
-        <form class="contact-form" action="/send-email" method="POST">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="apikey" value="f73fc05c-b86a-4539-85bc-924758de6cfe">
+          <input type="hidden" name="subject" value="New Submission from justinbrkich.com">
           <div class="name-input">
             <label class="label">Name</label>
             <input class="input" type="text" name="name" required>
@@ -68,7 +70,7 @@
             <label class="label">Message</label>
             <textarea class="input2" name="message" required></textarea>
           </div>
-          <div class="submit" id="submit-button">Submit</div>
+          <button type="submit" class="submit" id="submit-button">Submit</button>
         </form>
       </div>
     <div class="footer-line"></div>
