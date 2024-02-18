@@ -152,6 +152,10 @@
     }
 
 /* break: Mobile CSS */
+    * {
+        box-sizing: border-box;
+    }
+
     .Home-Page {
         width: 100vw;
         height: 100vh;
@@ -294,6 +298,7 @@
         gap: 20px;
         padding: 0;
         justify-content: center;
+        margin: auto;
     }
     .hero-title-container {
         display: flex;
@@ -455,8 +460,8 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 10px;
-        margin: 5px 15px;
+        gap: 20px;
+        margin: 15px 15px;
     }
       
     .empowering-1,
@@ -527,6 +532,217 @@
         height: 100%;
     }
 
+    .button-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        margin-top: 15px;
+    }
+
+    .Button-5,
+    .Button-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7.5px 15px;
+        font-family: var(--mobilebody-font);
+        font-size: var(--mobilebody-size);
+        gap: 10px;
+        border-radius: 100px;
+        border: 2px solid #000;
+        transition: background-color 0.3s ease-in-out;
+        text-decoration: none;
+    }
+    .Button-6 a {
+        text-decoration: none;
+    }
+
+    .what-i-use-container {
+        width: fit-content;
+        height: auto;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .h-2 {
+        width: auto;
+        flex-grow: 0;
+        font-family: var(--mobileh2-font);
+        font-size: var(--mobileh2-size);
+        font-weight: var(--mobileh2-weight);
+        font-stretch: normal;
+        font-style: normal;
+        line-height: var(--mobileh2-height);
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+      }
+
+    .row-1-container,
+    .row-1-container * {
+        box-sizing: border-box;
+    }
+    .row-1-container {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .figma-container {
+        padding: 10px;
+        width: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: var(--white-secondary);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .vs-code-container,
+    .vs-code-container * {
+        box-sizing: border-box;
+    }
+    .vs-code-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 10px;
+        width: 125px; /* TODO: copy and paste padding, width, and gap */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .vs-code-logo {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .vscode-code {
+        height: auto;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .articulate-container {
+        padding: 30px 0px 30px 0px;
+        width: 227.6px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 57px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .articulate,
+    .articulate * {
+        box-sizing: border-box;
+    }
+
+    .articulate {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        top: 0%;
+        overflow: visible;
+        align-self: center;
+    }
+
+    .creative-cloud-container,
+    .creative-cloud-container * {
+        box-sizing: border-box;
+    }
+    .creative-cloud-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 30px 15px 30px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .office-container,
+    .office-container * {
+        box-sizing: border-box;
+    }
+    .office-container {
+        background: var(--white-secondary, #ffffff);
+        padding: 30px 0px 30px 0px;
+        width: 227.6px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .icon {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    .vector {
+        height: auto;
+        position: absolute;
+        right: 0%;
+        left: 0%;
+        width: 100%;
+        bottom: 0%;
+        top: 0%;
+        height: 100%;
+        overflow: visible;
+    }
+    .microsoft-office {
+        height: auto;
+        position: absolute;
+        left: 10.5px;
+        top: 10.5px;
+        overflow: visible;
+    }
+    .body {
+        color: #000000;
+        text-align: center;
+        font-family: var(--mobileh3-font);
+        font-size: var(--mobileh3-size);
+        line-height: var(--mobileh3-height);
+        font-weight: var(--mobileh3-weight);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 /* break: animations */
 @keyframes fadeIn {
