@@ -520,6 +520,11 @@ html, body {
   position: relative;
 }
 
+.figma {
+  max-width: 74px;
+  min-height: 100px;
+}
+
 .figma-container {
   padding: 30px 0px 30px 0px;
   width: 227.6px;
@@ -565,6 +570,14 @@ html, body {
   overflow: visible;
 }
 
+.articulate-logo-container {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+
+}
+
 .articulate-container {
   padding: 30px 0px 30px 0px;
   width: 227.6px;
@@ -588,12 +601,12 @@ html, body {
   height: 100%;
   object-fit: contain;
   border-radius: 5px;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
   overflow: visible;
   align-self: center;
+}
+
+.articulate-small, .articulate-logo-container-small {
+  display: none;
 }
 
 .creative-cloud-container,
@@ -601,17 +614,19 @@ html, body {
   box-sizing: border-box;
 }
 .creative-cloud-container {
-  background: var(--white-secondary, #ffffff);
-  padding: 30px 15px 30px 15px;
+  padding: 30px 0px 30px 0px;
+  width: 227.6px;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
-  gap: 57px;
-  align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
+  align-items: center;
+  gap: 57px;
+  background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.creative-cloud-small, .creative-logo-container-small {
+  display: none;
 }
 
 .office-container,
@@ -619,42 +634,33 @@ html, body {
   box-sizing: border-box;
 }
 .office-container {
-  background: var(--white-secondary, #ffffff);
   padding: 30px 0px 30px 0px;
   width: 227.6px;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
-  gap: 57px;
-  align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
+  align-items: center;
+  gap: 57px;
+  background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-.icon {
+.office-logo-container {
   flex-shrink: 0;
   width: 100px;
   height: 100px;
   position: relative;
-}
-.vector {
-  height: auto;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  overflow: visible;
+  margin: 0 auto;
 }
 .microsoft-office {
   height: auto;
   position: absolute;
-  left: 10.5px;
-  top: 10.5px;
+  width: 100%;
+  height: 100%;
   overflow: visible;
+}
+.office-logo-container-small, .microsoft-office-small {
+  display: none;
 }
 .body {
   color: #000000;
@@ -686,6 +692,7 @@ html, body {
   background: var(--white-secondary, #ffffff);
   padding: 30px 0px 30px 0px;
   width: 227.6px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   gap: 57px;
@@ -695,34 +702,24 @@ html, body {
   position: relative;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .html-logo {
   flex-shrink: 0;
   width: 100px;
   height: 100px;
   position: relative;
-  overflow: hidden;
+  margin: 0 auto;
 }
-.html-background {
-  height: auto;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: auto;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  overflow: visible;
-}
+
 .html-logo2 {
   height: auto;
   position: absolute;
-  right: 22.46%;
-  left: 22.46%;
-  width: 55.08%;
-  bottom: 11.25%;
-  top: 11%;
-  height: 77.75%;
+  width: 100%;
+  height: 100%;
   overflow: visible;
+}
+.html-logo-small, .html-logo2-small {
+  display: none;
 }
 .body {
   color: #000000;
@@ -740,6 +737,7 @@ html, body {
   background: var(--white-secondary, #ffffff);
   padding: 30px 0px 30px 0px;
   width: 227.6px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   gap: 57px;
@@ -754,54 +752,29 @@ html, body {
   width: 100px;
   height: 100px;
   position: relative;
-  overflow: hidden;
-}
-.css-background {
-  height: auto;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  overflow: visible;
+  margin: 0 auto;
 }
 .css-logo2 {
   height: auto;
   position: absolute;
-  right: 22.42%;
-  left: 22.5%;
-  width: 55.08%;
-  bottom: 11.25%;
-  top: 11%;
-  height: 77.75%;
+  width: 100%;
+  height: 100%;
   overflow: visible;
 }
-.body2 {
-  color: #000000;
-  text-align: center;
-  font-family: var(--subheader-1-font-family, "Roboto-SemiBold", sans-serif);
-  font-size: var(--subheader-1-font-size, 28px);
-  line-height: var(--subheader-1-line-height, 33px);
-  font-weight: var(--subheader-1-font-weight, 600);
-  position: relative;
-  width: 74.18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.css-logo-small, .css-logo2-small {
+  display: none;
 }
+
 .java-script-container {
-  background: var(--white-secondary, #ffffff);
   padding: 30px 0px 30px 0px;
   width: 227.6px;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
-  gap: 57px;
-  align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+  align-items: center;
+  gap: 57px;
+  background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .java-script-logo {
@@ -809,21 +782,19 @@ html, body {
   width: 100px;
   height: 100px;
   position: relative;
+  margin: 0 auto;
+}
+.java-script-logo2 {
+  height: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   overflow: visible;
 }
-.body3 {
-  color: #000000;
-  text-align: center;
-  font-family: var(--subheader-1-font-family, "Roboto-SemiBold", sans-serif);
-  font-size: var(--subheader-1-font-size, 28px);
-  line-height: var(--subheader-1-line-height, 33px);
-  font-weight: var(--subheader-1-font-weight, 600);
-  position: relative;
-  width: 144.05px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.java-script-logo-small, .java-script-logo2-small {
+  display: none;
 }
+
 .github-container {
   background: var(--white-secondary, #ffffff);
   padding: 30px 0px 30px 0px;
@@ -837,12 +808,15 @@ html, body {
   position: relative;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-.github-logo {
+.github-logo, .github-logo-container {
   flex-shrink: 0;
   width: 100px;
   height: 100px;
   position: relative;
   overflow: visible;
+}
+.github-logo-small, .github-logo-container-small {
+  display: none;
 }
 
 .endorsements-container,

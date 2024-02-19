@@ -190,14 +190,12 @@
         line-height: var(--nav-height);
         text-transform: var(--nav-case);
         text-align: center;
-        position: fixed;
+        position: relative;
         color: var(--black-primary);
-        background-color: var(--black-secondary);
         border: none;
         border-radius: 10px;
         padding: 2px;
         right: 20px;
-        opacity: 70%;
     }
 
     .mobile-container {
@@ -214,6 +212,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        z-index: 1;
     }
 
     .Name {
@@ -234,7 +233,7 @@
         flex-direction: column;
         /* Change to column */
         position: absolute;
-        top: 70px;
+        top: 60px;
         /* Adjust this value to move the nav-bar-links closer to the mobile-menu-button */
         width: 100px;
         height: max-content;
@@ -244,9 +243,8 @@
         opacity: 0;
         /* Start invisible */
         gap: 10px;
-        background-color: rgb(240, 242, 245, .9);
         padding: 5px 0;
-        right: 20px;
+        right: 32px;
         align-items: self-end;
     }
 
@@ -256,6 +254,7 @@
         /* Show when visible*/
         animation: fadeIn 0.5s ease-in-out forwards;
         /* Apply fadeIn animation */
+        background-color: rgb(240, 242, 245, .9);
     }
 
     .nav-bar-links a {
@@ -601,7 +600,7 @@
         margin: auto;
         flex-direction: column;
         align-items: center;
-        gap: 3px;
+        gap: 5px;
     }
 
     .h-2-container {
@@ -627,10 +626,9 @@
 
 
     .row-1-container, .row-2-container {
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
     }
 
     .row-1-container,
@@ -653,17 +651,24 @@
     .css-container,
     .java-script-container,
     .github-container {
-        height: 172px;
+        box-sizing: border-box;
+        min-height: 100px;
+    }
+
+    .figma {
+        max-width: 37px;
+        min-height: 50px;
     }
 
     .figma-container {
         padding: 10px;
-        width: 125px;
+        min-width: 77.47px;
+        max-width: 100px;
+        gap: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
         background-color: var(--white-secondary);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -676,39 +681,29 @@
     .vs-code-container {
         background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
         position: relative;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .vs-code-logo {
-        flex-shrink: 0;
-        width: 100px;
-        height: 100px;
-        position: relative;
+    .vs-code-logo,
+    .vs-code-logo * {
+        max-width: 50px;
+        min-height: 50px;
         align-items: center;
         justify-content: center;
     }
 
-    .vscode-code {
-        height: auto;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-    }
-
     .articulate-container {
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
@@ -718,22 +713,27 @@
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .articulate,
-    .articulate * {
-        box-sizing: border-box;
+    .articulate-logo-container {
+        display: none;
     }
 
     .articulate {
-        width: auto;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 5px;
-        right: 0%;
-        left: 0%;
-        bottom: 0%;
-        top: 0%;
-        overflow: visible;
-        align-self: center;
+        display: none;
+    }
+
+    .articulate-small {
+        max-width: 50px;
+        min-height: 50px;
+        border-radius: 10px;
+    }
+
+    .articulate-logo-container-small {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        max-width: 50px;
+        min-height: 90px;
     }
 
     .creative-cloud-container,
@@ -742,20 +742,35 @@
     }
 
     .creative-cloud-container {
-        background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-        position: relative;
-        overflow: hidden;
+        align-items: center;
+        background-color: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
+    .creative-logo-container-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .creative-cloud-small {
+        max-width: 50px;
+        min-height: 50px;
+        border-radius: 20px;
+        margin: 0;
+    }
+    .creative-cloud, .creative-logo-container {
+        display: none;
+    }
+    
 
     .office-container,
     .office-container * {
@@ -763,48 +778,39 @@
     }
 
     .office-container {
-        background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-        position: relative;
-        overflow: hidden;
+        align-items: center;
+        background-color: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .icon {
-        /*office logo*/
-        flex-shrink: 0;
-        width: 100px;
+    .office-logo-container-small {
+        /*office logo child container*/
+        display: flex;
+        width: 50px;
         height: 100px;
         position: relative;
+        justify-content: center;
+        align-items: center;
     }
 
-    .vector {
-        /*office logo*/
-        height: auto;
-        position: absolute;
-        right: 0%;
-        left: 0%;
-        width: 100%;
-        bottom: 0%;
-        top: 0%;
-        height: 100%;
+    .microsoft-office-small {
+        min-height: 50px;
+        max-width: 50px;
         overflow: visible;
+        background-color: #F0F0F0;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
     }
-
-    .microsoft-office {
-        height: auto;
-        position: absolute;
-        left: 10.5px;
-        top: 10.5px;
-        overflow: visible;
+    .office-logo-container, .microsoft-office {
+        display: none;
     }
 
     .body {
@@ -818,6 +824,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 70px;
     }
 
     .row-2-container,
@@ -834,169 +841,100 @@
     .html-container {
         background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
         position: relative;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .html-logo {
-        flex-shrink: 0;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        overflow: hidden;
+    .html-logo, .html-logo2 {
+        display: none;
     }
-
-    .html-background {
-        height: auto;
-        position: absolute;
-        right: 0%;
-        left: 0%;
-        width: auto;
-        bottom: 0%;
-        top: 0%;
-        height: 100%;
-        overflow: visible;
-    }
-
-    .html-logo2 {
-        height: auto;
-        position: absolute;
-        right: 22.46%;
-        left: 22.46%;
-        width: 55.08%;
-        bottom: 11.25%;
-        top: 11%;
-        height: 77.75%;
-        overflow: visible;
+    .html-logo-small, .html-logo2-small {
+        max-width: 50px;
+        min-height: 50px;
+        align-items: center;
+        justify-content: center;
+        max-width: 50px;
+        min-height: 90px;
     }
 
     .css-container {
-        background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-        position: relative;
+        align-items: center;
+        background-color: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
     }
 
-    .css-logo {
-        flex-shrink: 0;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .css-background {
-        height: auto;
-        position: absolute;
-        right: 0%;
-        left: 0%;
-        width: 100%;
-        bottom: 0%;
-        top: 0%;
-        height: 100%;
-        overflow: visible;
-    }
-
-    .css-logo2 {
-        height: auto;
-        position: absolute;
-        right: 22.42%;
-        left: 22.5%;
-        width: 55.08%;
-        bottom: 11.25%;
-        top: 11%;
-        height: 77.75%;
-        overflow: visible;
-    }
-
-    .body2 {
-        color: #000000;
-        text-align: center;
-        font-family: var(--mobileh3-font);
-        font-size: var(--mobileh3-size);
-        line-height: var(--mobileh3-height);
-        font-weight: var(--mobileh3-weight);
-        position: relative;
-        width: 74.18px;
-        display: flex;
+    .css-logo-small, .css-logo2-small {
         align-items: center;
         justify-content: center;
+        max-width: 50px;
+        min-height: 90px;
     }
+
+    .css-logo, .css-logo2 {
+        display: none;
+    }
+
 
     .java-script-container {
-        background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-        position: relative;
+        align-items: center;
+        background-color: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .java-script-logo {
-        flex-shrink: 0;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        overflow: visible;
-    }
-
-    .body3 {
-        color: #000000;
-        text-align: center;
-        font-family: var(--mobileh3-font);
-        font-size: var(--mobileh3-size);
-        line-height: var(--mobileh3-height);
-        font-weight: var(--mobileh3-weight);
-        position: relative;
-        width: 144.05px;
-        display: flex;
+    .java-script-logo-small, .java-script-logo2-small {
         align-items: center;
         justify-content: center;
+        max-width: 50px;
+        min-height: 90px;
+    }
+
+    .java-script-logo, .java-script-logo2 {
+        display: none;
     }
 
     .github-container {
-        background: var(--white-secondary, #ffffff);
         padding: 10px;
-        width: 125px;
-        /* TODO: copy and paste padding, width, and gap */
+        min-width: 77.47px;
+        max-width: 100px;
         gap: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-        position: relative;
+        align-items: center;
+        background-color: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .github-logo {
-        flex-shrink: 0;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        overflow: visible;
+    .github-logo-small, .github-logo-container-small {
+        align-items: center;
+        justify-content: center;
+        max-width: 50px;
+        min-height: 90px;
+    }
+    .github-logo, .github-logo-container {
+        display: none;
     }
 
     .endorsements-container,
@@ -1059,7 +997,7 @@
     .footer {
         width: 100%;
         background: var(--white-primary);
-        padding: 54px 0 54px 0;
+        padding: 54px 0 10px 0;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -1095,7 +1033,7 @@
     .footer-button-container {
         display: flex;
         flex-direction: column;
-        gap: 56px;
+        gap: 35px;
         width: fit-content;
         align-items: flex-end;
         justify-content: space-between;
@@ -1105,12 +1043,12 @@
     }
 
     .page-container {
+        min-height: 27.2px;
         display: flex;
         flex-direction: row;
         gap: 15px;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        flex-shrink: 0;
         position: relative;
     }
 
@@ -1144,7 +1082,7 @@
     .social-container {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 5px;
         align-items: flex-end;
         justify-content: flex-end;
         flex-shrink: 0;
@@ -1153,15 +1091,13 @@
 
     .linkedin {
         border-radius: 100px;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: auto;
-        height: auto;
         position: relative;
         overflow: visible;
         background-color: linear-gradient(to right, #5566DE, #A38AD0, #F9BA00, #F1B006);
@@ -1169,30 +1105,26 @@
 
     .github-2 {
         border-radius: 100px;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         gap: 10px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: auto;
-        height: auto;
         position: relative;
         overflow: visible;
     }
 
     .email-2 {
         border-radius: 100px;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         gap: 10px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: auto;
-        height: auto;
         position: relative;
         overflow: visible;
     }
