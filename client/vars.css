@@ -105,11 +105,11 @@
   --mobilebody-size: 12px;
   --mobilebody-height: 1.5;
 
-  --nav-font: 'Roboto', sans-serif;
-  --nav-size: 20px;
-  --nav-weight: 500;
-  --nav-height: normal;
-  --nav-case: uppercase;
+  --mobilenav-font: 'Roboto', sans-serif;
+  --mobilenav-size: 14px;
+  --mobilenav-weight: 500;
+  --mobilenav-height: normal;
+  --mobilenav-case: uppercase;
 
   --mobileul-font: 'Roboto Flex', sans-serif;
   --mobileul-weight: 400;
