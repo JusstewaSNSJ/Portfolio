@@ -546,7 +546,7 @@ html, body {
   font-weight: var(--body-weight);
   position: relative;
   width: 348px;
-  height: 457px;
+  height: auto;
 }
 .project-management {
   background: #efbc74;
